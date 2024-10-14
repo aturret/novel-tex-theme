@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "Chinese-Italic";  /* Your Chinese font */
+  src: local("KaiTi"),
+      local("STKaiti"),
+      local("楷体"),
+      local("楷体_GB2312"),
+      local("FangZhengKaiTi"),
+      local("方正楷体"),
+      local("KaiTi_GB2312"),
+      local("Source Han Serif SC");
+  font-style: italic;  /* Disable italic for Chinese characters */
+  unicode-range: U+4E00-9FFF;  /* Range for Chinese characters */
+}
+
+@font-face{
+  font-family: "Latin-Italic";  /* Your Latin font */
+  src: local("Times New Roman"),
+      local("Georgia"),
+      local("Times"),
+      local("serif");
+  font-style: normal;  /* Enable italic for Latin characters */
+  unicode-range: U+0000-00FF;  /* Range for Latin characters */
+}
+
 :root {
   /* == 基础字体设置 == */
   --base-Latin-font: "Times New Roman";
@@ -54,14 +78,14 @@ strong {
 }
 
 em {
-  font-family: "KaiTi", "STKaiti", "FangZhengKaiTi", "Source Han Serif SC", serif, sans-serif;
-  font-style: normal; 
+  font-family: "Latin-Italic", "Chinese-Italic", "Times New Roman", serif, sans-serif;
+  font-style: italic;
 }
 
 strong em,
 em strong {
-  font-family: "KaiTi", "STKaiti", "FangZhengKaiTi", "Source Han Serif SC", serif, sans-serif;
-  font-style: normal; 
+  font-family: "Latin-Italic", "Chinese-Italic", "Times New Roman", serif, sans-serif;
+  font-style: italic;
 }
 
 #write {
