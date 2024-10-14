@@ -53,6 +53,17 @@ strong {
   color: var(--strong-text-color);
 }
 
+em {
+  font-family: "KaiTi", "STKaiti", "FangZhengKaiTi", "Source Han Serif SC", serif, sans-serif;
+  font-style: normal; 
+}
+
+strong em,
+em strong {
+  font-family: "KaiTi", "STKaiti", "FangZhengKaiTi", "Source Han Serif SC", serif, sans-serif;
+  font-style: normal; 
+}
+
 #write {
   font-family: var(--base-Latin-font), var(--base-Chinese-font), serif;
   font-size: var(--base-font-size);
